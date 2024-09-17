@@ -1,0 +1,109 @@
+/* Aturan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e785d2;
+  color: #ca009e;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-section, .guest-list {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulir Buku Tamu */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  border: 1px solid #e091d5;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px;
+  background-color: #fc91d7;
+  color: rgb(0, 1, 1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff5cc1;
+}
+
+.guest-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.guest-list li {
+  background-color: #ffc3e9;
+  border: 1px solid #fec7fe;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-section, .guest-list {
+    width: 100%;
+  }
+}
+
+/* Menambahkan background gradien */
+body {
+  background: linear-gradient(to right, #d69fc9, #e77ba6);
+}
+
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
